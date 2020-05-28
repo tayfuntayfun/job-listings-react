@@ -1,3 +1,72 @@
 .App {
   text-align: center;
 }
+
+body{
+  font-family: 'Spartan', sans-serif;
+}
+
+.job-listing{
+  border:  2px solid blue;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.company-logo{
+  align-self: center;
+}
+
+.job-details{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.job-details-company, .job-details-misc{
+  display: flex;
+  flex-direction: row;
+}
+
+.label-new {
+margin-left: 10px;
+font-size: 15px;
+background-color: hsl(180, 29%, 50%);
+border-radius: 13px;
+color: aliceblue;
+padding: 8px 8px;
+line-height: 23px;
+height: 23px;
+}
+
+.label-featured{
+  margin-left: 10px;
+  font-size: 15px;
+  background-color: black;
+  border-radius: 13px;
+  color: aliceblue;
+  padding: 8px 8px;
+  line-height: 23px;
+  height: 23px;
+}
+
+.job-company-name{
+font-size: 20px;
+color: hsl(180, 29%, 50%);
+font-weight: bolder;
+padding: 8px 0;
+}
+
+.job-details-position{
+color: hsl(180, 29%, 50%);
+text-align: left;
+}
+
+.job-details-misc div{
+  padding-right: 15px;
+  color: hsl(180, 8%, 52%);
+}
+

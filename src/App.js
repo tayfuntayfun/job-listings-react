@@ -1,11 +1,16 @@
 import React from 'react';
-import data from './data.json';
+import jobListingsData from './data.json';
 import './App.css';
+import JobListing from './JobListing';
 
 function App() {
+   
   return (
     <div className="App">
-     {data[0].position}
+      {jobListingsData.map ((jobListing) => 
+        < JobListing  jobListing= {jobListing} /> 
+
+      )}
     </div>
   );
 }
