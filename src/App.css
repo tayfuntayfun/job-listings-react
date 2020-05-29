@@ -4,11 +4,13 @@
 
 body{
   font-family: 'Spartan', sans-serif;
+  background:  hsl(180, 52%, 96%)
 }
 
 .job-listing{
-  border:  2px solid blue;
-  width: 70%;
+  background: white;
+  border-radius: 5px;
+  width: 60%;
   margin: auto;
   margin-top: 10px;
   display: flex;
@@ -48,7 +50,7 @@ height: 23px;
   background-color: black;
   border-radius: 13px;
   color: aliceblue;
-  padding: 8px 8px;
+  padding: 4px 8px;
   line-height: 23px;
   height: 23px;
 }
@@ -68,5 +70,14 @@ text-align: left;
 .job-details-misc div{
   padding-right: 15px;
   color: hsl(180, 8%, 52%);
+}
+
+.programming-languages{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  margin: auto;
+  width: 80%;
 }
 

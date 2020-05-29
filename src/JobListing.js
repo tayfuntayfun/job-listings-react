@@ -27,6 +27,12 @@ const JobListing = (props) => {
                     <div>{props.jobListing.location}</div>
                 </div>   
             </div>
+            <div className='programming-languages'>
+            {
+                props.jobListing.languages.map((item , index) => 
+                    <option key={index}> {item} </option>)
+            }
+            </div>
         </div>
     )
 }

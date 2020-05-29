@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       {jobListingsData.map ((jobListing) => 
         < JobListing  jobListing= {jobListing} /> 
-
       )}
     </div>
   );
