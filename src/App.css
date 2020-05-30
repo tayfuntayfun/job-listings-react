@@ -20,6 +20,7 @@ body{
   display: flex;
   flex-direction: row;
   padding: 20px 30px 20px 15px;
+  box-shadow: 0 2px 4px 0 #92a8d1, 0 3px 10px 0 rgba(54, 53, 53, 0.19);
 }
 
 @media only screen and (max-width: 400px) {
