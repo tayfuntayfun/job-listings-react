@@ -17,7 +17,7 @@ const JobListing = (props) => {
                     <div className='label-featured'>FEATURED</div> }
                 </div>
                 <div className='job-details-position'>
-                    <h2>{props.jobListing.position} </h2>
+                    <div>{props.jobListing.position} </div>
                 </div>
                 <div className='job-details-misc'>
                     <div>{props.jobListing.postedAt}</div>
@@ -30,7 +30,10 @@ const JobListing = (props) => {
             <div className='programming-languages'>
             {
                 props.jobListing.languages.map((item , index) => 
-                    <option key={index}> {item} </option>)
+                    <button key={index} className='language-buttons'>
+                         {item} 
+                    </button>
+                )
             }
             </div>
         </div>

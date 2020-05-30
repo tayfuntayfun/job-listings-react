@@ -15,17 +15,25 @@ body{
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 20px 30px 20px 15px;
+}
+
+.job-listing:hover {
+  box-shadow: 0 4px 8px 0 #92a8d1, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left-style: solid;
+  border-left-color: #466194;
 }
 
 .company-logo{
   align-self: center;
+  width: 15%;
 }
 
 .job-details{
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  width: 50%;
 }
 
 .job-details-company, .job-details-misc{
@@ -35,24 +43,28 @@ body{
 
 .label-new {
 margin-left: 10px;
-font-size: 15px;
+font-size: 12px;
 background-color: hsl(180, 29%, 50%);
 border-radius: 13px;
 color: aliceblue;
-padding: 8px 8px;
+padding: 2px 8px;
 line-height: 23px;
 height: 23px;
+font-weight: bolder;
+align-self: center;
 }
 
 .label-featured{
   margin-left: 10px;
-  font-size: 15px;
+  font-size: 12px;
   background-color: black;
   border-radius: 13px;
   color: aliceblue;
-  padding: 4px 8px;
+  padding: 2px 8px;
   line-height: 23px;
   height: 23px;
+  font-weight: bolder;
+  align-self: center;
 }
 
 .job-company-name{
@@ -60,11 +72,15 @@ font-size: 20px;
 color: hsl(180, 29%, 50%);
 font-weight: bolder;
 padding: 8px 0;
+align-self: center;
 }
 
 .job-details-position{
 color: hsl(180, 29%, 50%);
 text-align: left;
+font-size: 20px;
+font-weight: bold;
+margin: 10px 0;
 }
 
 .job-details-misc div{
@@ -75,9 +91,24 @@ text-align: left;
 .programming-languages{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-self: center;
   margin: auto;
-  width: 80%;
+  width: 35%;
+}
+
+.language-buttons{
+  background-color: hsl(180, 31%, 95%);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  color: hsl(180, 8%, 52%);
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+
+.language-buttons:hover {
+  background-color: hsl(180, 8%, 52%);
+  color: white;
 }
 
