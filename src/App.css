@@ -61,12 +61,6 @@ i{
     text-align: center;
     padding: 5px 15px;
   }
-
-  .job-listing:active {
-    pointer-events: none;
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05);
-  }
   
   .header{
     height: 80px;

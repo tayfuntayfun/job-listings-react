@@ -1,13 +1,15 @@
 import React from 'react'
 
 
-const Favorites = ({jobFilter}) => {
+const Favorites = (props) => {
+ 
     return(
-      <div className={(jobFilter.length >0) ? "favorites-Container" : 'no-show'} >
-         {jobFilter
+      <div className={props.jobFilter.length >0 ? "favorites-Container" : 'no-show'} >
+         {props.jobFilter
          .map((element) => {
          return(
-         <div className={'language-buttons'}>{element}</div>)
+         <div className={'language-buttons'}
+              onClick={() => props.removeFilter(element)}>{element}</div>)
          })}
      </div>
    );

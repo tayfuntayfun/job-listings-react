@@ -1,34 +1,38 @@
 import React, {useState}  from 'react';
-import jobListingsData from './data.json';
+import data from './data.json';
 import './App.css';
 import JobListing from './JobListing';
 import Favorites from './Favorites';
 import { ReactComponent as Header } from './bg-header-desktop.svg'
 
 function App() {
-  const [jobData, setJobData] = useState(jobListingsData)
+  
   const [jobFilter, setJobFilter] = useState([]);
 
-  const addFilter = (e) => {
+  const addFilteredTag = (e) => {
     if (!jobFilter.includes(e.target.value)) {
       setJobFilter([...jobFilter, e.target.value]);
     }
   };
-  
+
+  const filterByTags = () => {
+    return data.filter((jobs) => 
+    jobFilter.every((value) => jobs.languages.includes(value) || jobs.role.includes(value) || jobs.level.includes(value)))
+  }
+
   const removeFilter = (removedItem) => {
-    setJobFilter(jobFilter.filter((item) => item.id !== removedItem.id))
-    setJobData([...jobFilter,removedItem])
+    setJobFilter(jobFilter.filter((item) => item !== removedItem))
   }
    
   return (
     <div className="App">
       <Header className='header'/>
-      <Favorites jobFilter={jobFilter}
-                 addFilter={addFilter}
+      <Favorites jobFilter={jobFilter}                
                  removeFilter={removeFilter}/>
-      {jobData.map ((jobListing) => 
-        < JobListing  jobListing= {jobListing}
-                      addFilter={addFilter}
+      {filterByTags().map ((item, i) => 
+        < JobListing  jobListing= {item}
+                      key={i}
+                      addFilter={addFilteredTag}
                       removeFilter={removeFilter} /> 
       )}
     </div>
