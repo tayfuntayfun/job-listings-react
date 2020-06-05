@@ -28,9 +28,24 @@ const JobListing = (props) => {
                 </div>   
             </div>
             <div className='programming-languages'>
-            {
+            <button className='language-buttons'
+                    value={props.jobListing.role}
+                    onClick={props.addFilter}
+                    style={{cursor:'pointer'}}
+                    >{props.jobListing.role}</button>
+            <button className='language-buttons'
+                    value={props.jobListing.level}
+                    onClick={props.addFilter}
+                    style={{cursor:'pointer'}}
+                    
+                    >{props.jobListing.level}</button>
+            {   
                 props.jobListing.languages.map((item , index) => 
-                    <button key={index} className='language-buttons'>
+                    <button key={index} className='language-buttons'
+                            value={item}
+                            onClick={props.addFilter}
+                            style={{cursor:'pointer'}}
+                            >
                          {item} 
                     </button>
                 )

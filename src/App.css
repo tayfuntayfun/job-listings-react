@@ -11,10 +11,34 @@ body{
   background-color: teal;
 }
 
+.favorites-Container{
+  background: white;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  border-radius: 5px;
+  justify-content: center;
+  width: 65%;
+  padding: 20px 30px 20px 15px;
+  box-shadow: 0 2px 4px 0 #92a8d1, 0 3px 10px 0 rgba(54, 53, 53, 0.19);
+  transform:translateY(-50%);
+
+}
+
+i{
+  width: 60%;
+  margin-left: auto;
+  z-index: 10px;
+}
+
+.no-show{
+  display: none;
+}
+
 .job-listing{
   background: white;
   border-radius: 5px;
-  width: 60%;
+  width: 65%;
   margin: auto;
   margin-top: 10px;
   display: flex;
