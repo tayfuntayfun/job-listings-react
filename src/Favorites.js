@@ -18,7 +18,6 @@ const Favorites = (props) => {
               <i style={{padding:'5px', 
                         background:'red',
                         borderRadius:'3px',
-                        
                       }}
               onClick={() => props.removeFilter(element)}><b>X</b></i>
            </div>)
