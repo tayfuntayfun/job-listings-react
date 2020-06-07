@@ -12,16 +12,50 @@ body{
 }
 
 .favorites-Container{
-  background: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
   margin: auto;
   border-radius: 5px;
-  justify-content: center;
   width: 65%;
   padding: 20px 30px 20px 15px;
   box-shadow: 0 2px 4px 0 #92a8d1, 0 3px 10px 0 rgba(54, 53, 53, 0.19);
   transform:translateY(-50%);
+}
+
+.favorites-Container-Clearer{
+  background-color: hsl(180, 36%, 88%);
+  padding: 10px 10px;
+  color: hsl(0, 91%, 8%);
+  font-weight: bolder;
+  margin: auto;
+  position: absolute;
+  left: 84%;
+  border-radius: 5px;
+  border: 2px solid hsl(180, 54%, 20%);
+  cursor: pointer;
+}
+
+.favorites-Container-Clearer:hover{
+  color: white;
+  background-color: #bd0d0d;
+  transition: 0.7s;
+}
+
+.x-remove{
+  border-radius: 50%;
+  background:'white';
+  font-weight: 'bolder';
+  transform:translate(-10px,-10px);
+  cursor: pointer;
+}
+
+.x-remove:hover{
+  font-weight: 900;
+  background-color: rgb(248, 232, 4);
+  transition: ease-out;
 }
 
 .job-listing{
@@ -62,7 +96,6 @@ body{
   border-left-color: #466194;
 }
 
-
 .company-logo{
   align-self: center;
   width: 15%;
@@ -82,8 +115,8 @@ body{
     margin-left: 10px;
     width: 90%;
   }
-
 }
+
 .job-details-company, .job-details-misc{
   display: flex;
   flex-direction: row;

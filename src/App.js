@@ -28,7 +28,8 @@ function App() {
     <div className="App">
       <Header className='header'/>
       <Favorites jobFilter={jobFilter}                
-                 removeFilter={removeFilter}/>
+                 removeFilter={removeFilter}
+                 setJobFilter={setJobFilter}/>
       {filterByTags().map ((item, i) => 
         < JobListing  jobListing= {item}
                       key={i}
