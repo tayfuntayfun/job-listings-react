@@ -41,7 +41,7 @@ body{
 .favorites-Container-Clearer:hover{
   color: white;
   background-color: #bd0d0d;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .x-remove{
