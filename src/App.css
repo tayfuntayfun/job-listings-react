@@ -45,8 +45,6 @@ body{
 }
 
 .x-remove{
-  border-radius: 50%;
-  background:'white';
   font-weight: 'bolder';
   transform:translate(-10px,-10px);
   cursor: pointer;
@@ -54,7 +52,8 @@ body{
 
 .x-remove:hover{
   font-weight: 900;
-  background-color: rgb(248, 232, 4);
+  border-radius: 3px;
+  background-color: rgb(233, 233, 118);
   transition: ease-out;
 }
 
